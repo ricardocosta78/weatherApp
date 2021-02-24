@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(17, 20, 19);
+    color:white;
+    font-family: 'Nunito', sans-serif;
+    filter: blur(15px);
+    transition:filter .3s ;
+}
+
+.container{
+    width:80%;
+    height:95%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background:rgba(57, 130, 238, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 25px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.container input{
+    width: 80%;
+    padding: 2rem;
+    border-radius: 50px;
+    outline:none;
+    border:none;
+    background: rgba( 5, 16, 32, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 2rem;
+    color:white;
+}
+input::placeholder{
+    font-size: 2rem;
+    text-align: center;
+    color:white;
+}
+.weather__today{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    height:40%;
+    margin-bottom: 6rem;
+    padding:4rem;
+    margin-top: 2rem;
+}
+.weather__details{
+    margin-left: 4rem;
+}
+.weather__city{
+    font-size: 4rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+.weather__day{
+    font-size:4rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+.weather__current{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 4rem;
+}
+.humidity span, .wind span, .pressure span{
+    font-size: 2rem;
+}
+.humidity , .wind , .pressure {
+    font-size: 2rem;
+}
+.humidity img, .wind img, .pressure img{
+    width:20px;
+    margin-right: .5rem;
+}
+.weather__current > p{
+    margin-bottom: 1rem;
+}
+.value{
+    margin-right: .5rem;
+}
+.weather__image{
+    width:250px;
+    padding: 4rem;
+    background: rgba( 5, 16, 32, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.weather__temperature{
+    font-size: 4rem;
+    margin-right: 4rem;
+}
+.weather__temperature span{
+    font-size: 4rem;
+}
+.weather__forecast{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    width:200px;
+    height:250px;
+    padding:2rem;
+    margin: 2rem;
+    background: rgba( 255, 255, 255, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.8px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius:10px;
+}
+.item img{
+    background: rgba( 1, 1, 15, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 3rem;
+}
+.forecast__day{
+    font-size: 1.7rem;
+    margin: 2rem auto;
+}
+.forecast__temperature{
+    font-size: 2rem;
+}
+.forecast__temperature span{
+    font-size: 2rem;
+}
+.forecast__icon{
+    width:80px;
+}
+
+@media(max-width:700px){
+    body{
+        width:100%;
+        height:100%;
+    }
+    .container{
+        width:90%;
+        height:100%;
+        margin: 2rem auto;
+    }
+    .weather__forecast,.weather__today{
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 1rem;
+    }
+    .weather__details{
+        margin: 0;
+    }
+    .weather__city{
+        margin: 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .weather__day{
+        font-size: 2rem;
+        margin:2rem 0;
+        text-align: center;
+    }
+    .weather__current{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0;
+    }
+    .humidity,.wind,.pressure{
+        font-size: .8rem;
+        width:100px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container input{
+        margin-top: 2rem;
+    }
+    .humidity img,.wind img,.pressure img{
+        margin: 1rem 0;
+    }
+    .weather__image{
+        width:150px;
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+    .weather__temperature{
+        margin: 2rem 0;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0.0px );
+        -webkit-backdrop-filter: blur( 0.0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding:1rem
+    }
+}

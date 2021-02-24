@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="search"
+        name="input"
+        class="search"
+        placeholder="Your City"
+        list="suggestions"
+      />
+      <datalist id="suggestions"> </datalist>
+      <div class="weather__today">
+        <div class="weather__details">
+          <h2 class="weather__city">City</h2>
+          <p class="weather__day">Day</p>
+          <div class="weather__current">
+            <p class="weather__indicator humidity">
+              <img src="images/humidity.png" alt="" />
+              <span class="value">50</span>%
+            </p>
+            <p class="weather__indicator wind">
+              <img src="images/wind.png" alt="" />
+              <span class="value">West, 5</span>m/s
+            </p>
+            <p class="weather__indicator pressure">
+              <img src="images/pressure.png" alt="" />
+              <span class="value">1050</span>hpa
+            </p>
+          </div>
+        </div>
+        <img
+          src="images/clear-sky.png"
+          alt="clear sky"
+          class="weather__image"
+        />
+        <div class="weather__temperature">
+          <span class="value">+25</span>&deg;C
+        </div>
+      </div>
+      <div class="weather__forecast">
+        <article class="item">
+          <img
+            src="images/clear-sky.png"
+            alt="clear sky"
+            class="forecast__icon"
+          />
+          <h3 class="forecast__day">Day</h3>
+          <p class="forecast__temperature">
+            <span class="value">+25</span>&deg;C
+          </p>
+        </article>
+        <article class="item">
+          <img
+            src="images/clear-sky.png"
+            alt="clear sky"
+            class="forecast__icon"
+          />
+          <h3 class="forecast__day">Day</h3>
+          <p class="forecast__temperature">
+            <span class="value">+25</span>&deg;C
+          </p>
+        </article>
+        <article class="item">
+          <img
+            src="images/clear-sky.png"
+            alt="clear sky"
+            class="forecast__icon"
+          />
+          <h3 class="forecast__day">Day</h3>
+          <p class="forecast__temperature">
+            <span class="value">+25</span>&deg;C
+          </p>
+        </article>
+        <article class="item">
+          <img
+            src="images/clear-sky.png"
+            alt="clear sky"
+            class="forecast__icon"
+          />
+          <h3 class="forecast__day">Day</h3>
+          <p class="forecast__temperature">
+            <span class="value">+25</span>&deg;C
+          </p>
+        </article>
+        <article class="item">
+          <img
+            src="images/clear-sky.png"
+            alt="clear sky"
+            class="forecast__icon"
+          />
+          <h3 class="forecast__day">Day</h3>
+          <p class="forecast__temperature">
+            <span class="value">+25</span>&deg;C
+          </p>
+        </article>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
